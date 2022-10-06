@@ -1,13 +1,128 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+ box-sizing: border-box;
+}
+body{
+  border: none;
+  padding: none;
+}
+.container{
+ 
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header{
+  max-height: 60x;
+  position: sticky;
+  top: 0;
+  
+}
+header.container{
+  height: 100%;
+}
+header .svg{
+  font-size: 50px;
+  position: relative;
+}
+header .svg .badge{
+  position: absolute;
+ 
+}
+main{
+  height: calc(100vh - 120px);
+}
+main .container{
+  display: flex;
+  height: 100%;
+  margin-top: 2rem;
+  
+}
+main section{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  
+  
+}
+main aside{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  
+  align-items: center;
+
+  height: 100%;
+}
+div.filter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow-y: auto;
+  
+}
+.card{
+  width: 20%;
+  aspect-ratio: 1/1;
+  margin: 25px;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer{
+  height: 60px;
+
+}
+footer .container{
+  height: 100%;
+}
+.cart-list{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  align-items: center;
+}
+.login{
+
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  align-items: center;
+
+}
+.login form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+}
+.Error{
+
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  align-items: center;
+
 }
